@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson1 - ASM1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lesson1/css/lesson1.css">
+    <script src="lesson1/1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img src="lesson1/anh/1.png" alt="">
+            <div class="text">
+                <h1>Understanding and <br> implementing using Appy</h1>
+                <a href="#"> <button>START</button></a>
+                <a href="#info"> <button>ABOUT</button></a>
+            </div>
+            <div class="about" id="info">
+                <h1>ABOUT EQUATION</h1>
+                <p>
+                    Create a website to solve quadratic equations with <br> javascript and design it so it looks good
+                </p>
+            </div>
+            <div class="notification">
+                <div class="notification1">
+                    <img src="lesson1/anh/2.png" alt="">
+                    <h3>HANDLING</h3>
+                    <p>High-speed processing system makes it possible to solve quadratic </p>
+                </div>
+                <div class="notification1">
+                    <img src="lesson1/anh/3.png" alt="">
+                    <h3>CONVENIENT</h3>
+                    <p>Convenient for calculations with difficult problems that cannot be solved quickly</p>
+                </div>
+                <div class="notification1">
+                    <img src="lesson1/anh/4.png" alt="">
+                    <h3>SAVE TIME</h3>
+                    <p>Data processing at high speed helps you reduce time in problem solving</p>
+                </div>
+            </div>
+            <div class="exercise" id="bai1">
+                <div class="coating">
+                    <div class="waterbottle">
+                        <section>
+                            <div class="shadow"></div>
+                            <div class="bowl">
+                                <div class="liquid"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="computer">
+                        <h3>SOVLE THE EQUATION ax<sup>2</sup> + bx + c = 0</h3>
+                        <span>Number of times to solve: <b id="soLanGiai"></b></span>
+                        <hr>
+                        <form action="" name="tinh">
+                            <p><label for="">Import number a:</label> <input type="text" oninput="check()" id="a" name="a" value=""></p>
+                            <p><label for="">Import number b:</label> <input type="text" oninput="check()" id="b" name="b" value=""></p>
+                            <p><label for="">Import number c:</label> <input type="text" oninput="check()" id="c" name="c" value=""></p>
+                            <button type="button" class="nut_khoa" disabled id="btngiai" onclick="ptb2.giai(); dem()">START</button>
+                            <button type="button" class="nut" id="btnchoso" onclick="choso()">RANDOM</button>
+                        </form>
+                        <div id="kq"></div>
+                        <p id="dongho"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise1">
+                <img src="lesson1/anh/88.png" alt="">
+                <div class="coating1">
+                    <h1>ABOUT ALBUM</h1>
+                    <p>Photo collection of today's most <br> outstanding phones</p>
+                    <a href="product.html"><button>PHOTOS</button></a>
+                </div>
+            </div>
+            <div class="exercise2" id="bai2">
+                <div class="coating2"></div>
+                <h3>See the latest  models today <br> ___________________</h3>
+                <div class="imageslide">
+                    <h2>image vector</h2>
+                    <div class="ima"><img id="picture" src="lesson1/anh/0.webp" alt=""></div>
+                    <div class="kick">
+                        <button id="kick1">
+                            <ion-icon name="chevron-back-circle-outline" onclick="prev()"></ion-icon>
+                        </button>
+                        <button id="kick2">
+                            <ion-icon name="chevron-forward-circle-outline" onclick="next()"></ion-icon>
+                        </button>
+                        <p id="demanh">1/9</p>
+                        <span id="note">Moonlight eyes</span>
+                    </div>
+                </div>
+                <!-- <div class="picture">
+                    <div class="knot1">
+                        <img src="lesson1/anh/8.png" alt="">
+                    </div>
+                    <div class="knot2">
+                        <img src="lesson1/anh/9.png" alt="">
+                    </div>
+                </div> -->
+                <!-- <div class="next">
+                    <div class="page"></div>
+                    <div class="page1"></div>
+                    <div class="page2"></div>
+                </div> -->
+                <div class="back">
+                    <div class="advertisement">
+                        <img src="lesson1/anh/11.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="lesson1/anh/10.png" alt="">
+                        <img src="lesson1/anh/12.png" alt="">
+                        <img src="lesson1/anh/13.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="infomation">
+                <div class="info">
+                    <div class="personal">
+                        <h3>MIN KIEN</h3>
+                        <p>Fpoly Student</p>
+                        <p>Vo Ngoc Min Kien is 19 years old, currently a student at FPT <br> Polytechnic College, majoring in computer programming - mobile devices <br> and this is a phase 1 assignment. <br> ________________</p>
+                    </div>
+                    <div class="avatar"></div>
+                </div>
+            </div>
+            <div class="end" id="end">
+                <div class="coating3"></div>
+                <div class="title1">
+                    <h1>GET IN TOUCH</h1>
+                    <p>Please give us your information so that we can <br> store and contact you easier</p>
+                </div>
+                <div class="input">
+                    <div class="textbox">
+                    <input type="text" placeholder="Enter Your Name "> <input type="text" placeholder="Enter Your Email">
+                    <br>
+                    <br>
+                    <input type="text" placeholder="Enter Your Subject" id="sc">
+                    <br>
+                    <br>
+                    <input type="text" placeholder="Enter Your Massage" id="sc">
+                    <br>
+                    <br>
+                    <button>Submit</button>
+                    </div>
+                </div>
+                <div class="subrise">
+                    <div class="content">
+                        <h1>SUBSCRIBE</h1>
+                        <p>Follow us so you don't miss any of <br> our announcements</p>
+                        <input type="text" placeholder="Your Email">
+                        <button>Submit</button>
+                    </div>
+                </div>
+                <div class="infoperson">
+                    <p>
+                        Phone : 0985940157
+                        <br>
+                        Mail : minkienmdc2003@gmail.com
+                        <br>
+                        Address : Village 3 - Hoa Phu - Chu Pah - Gia Lai
+                    </p>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <div class="title">
+                    <h1>appy</h1>
+                </div>
+                
+                <!-- <header>
+                    <ul>
+                        <li><a href="asm.html">HOME</a></li>
+                        <li><a href="#bai1">EQUATION</a></li>
+                        <li><a href="#bai2">PICTURE</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="log.html">LOG IN</a></li>
+                        <li><a href="infomation.html">INFORMATION</a></li>
+                    </ul>
+                </header> -->
+            </div>
+            <div class="navigation">
+                <div class="userBX">
+                    <div class="imgBX">
+                        <img src="16.jpg" alt="">
+                    </div>
+                    <p class="username">Võ Ngọc Min Kiên</p>
+                </div>
+                <div class="menuToggle"></div>
+                <ul class="menumini">
+                    <li><a href="#">
+                        <ion-icon name="person-outline"></ion-icon>
+                        My Profile</a></li>
+                    <li><a href="#bai1">
+                        <ion-icon name="calculator-outline"></ion-icon>
+                        Calculator</a></li>
+                    <li><a href="#bai2">
+                        <ion-icon name="image-outline"></ion-icon>
+                        Picture</a></li>
+                    <li><a href="shop.html">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        Shop</a></li>
+                    <li><a href="infomation.html">
+                        <ion-icon name="help-outline"></ion-icon>
+                        Help & Support</a></li>
+                    <li><a href="log.html">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                        Logout</a></li>
+                </ul>
+            </div>
+            <script>
+                let menuToggle = document.querySelector('.menuToggle');
+                let navigation = document.querySelector('.navigation');
+                menuToggle.onclick = function()
+                {
+                    navigation.classList.toggle('active')
+                }
+            </script>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Appy</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sho/css/shop.css">
+    <script src="sho/css/shop.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <a href="index.html"><h1>appy</h1></a>
+            <img src="sho/imag/2.png" alt="">
+            <h3>NEW LAPTOP</h3>
+            <h2>MGNN 3</h2>
+            <p>Latest design luxury, multi-function, modern. This laptop <br> will be a product that will not disappoint you</p>
+            <a href=""><button>BUY NOW</button></a>
+        </div>
+        <div class="title" id="bai1">
+            <h1>NEW PRODUCTS</h1>
+            <p>____________________________</p>
+        </div>
+        <div class="product1">
+            <img src="sho/imag/5.png" alt="">
+            <div class="product">
+                <h3>OPPO Reno6 5G</h3>
+                <div class="star">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                </div>
+                <p>$25.00 – $28.00</p>
+                <p>Description: Compact and convenient design, suitable for users with a series of outstanding features</p>
+                <a href="product3.html"><button>BUY NOW</button></a>
+            </div>
+        </div>
+        <div class="product2">
+            <img src="sho/imag/3.png" alt="">
+            <div class="product">
+                <h3>OPPO Reno9 45G</h3>
+                <div class="star1">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                    <img src="sho/imag/9.png" alt="">
+                </div>
+                <p>$30.00 – $38.00</p>
+                <p>Description: Compact and convenient design, suitable for users with a series of outstanding features</p>
+                <a href="product2.html"><button>BUY NOW</button></a>
+            </div>
+        </div>
+        <div class="product3">
+            <div class="back">
+                <div class="avatar"></div>
+                <div class="avatar1"></div>
+                <div class="avatar2"></div>
+                <div class="avatar3"></div>
+                <div class="avatar4"></div>
+            </div>
+            <div class="Investors" id="bai2"> 
+                <h3>INVESTORS</h3>
+                <p>
+                    Appy's outstanding investors to bring you the best <br> phone models available today <br> _______________
+                </p>
+            </div>
+        </div>
+        <div class="product4" id="bai3">
+            <h1>STATISTICAL</h1>
+            <div class="table">
+                <select name="" id="money" onchange="exchangePrice()"> 
+                    <option value="1000" >Chọn mức giá</option>  
+                    <option value="200"> Dưới 200$ </option>
+                    <option value="400">Dưới 400$</option>
+                    <option value="600">Dưới 600$</option>
+                    <option value="800">Dưới 800$</option>
+                </select>
+                <table border="1" width = "800" cellspacing="0" cellpadding="10" align="center" id="prodect">
+                    <tr id="table1">
+                        <td colspan="2">Product</td>
+                        <td>Unit Price</td>
+                        <td>Amount</td>
+                        <td>Into Money</td>
+                    </tr>  
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(0)"></td>
+                        <td>Iphone 9</td>
+                        <td name="prict">700</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></td>
+                        <td name="dolar" value="0">0</td>
+                    </tr>  
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(1)"></td>
+                        <td>SamSung</td>
+                        <td name="prict">400</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></td>
+                        <td name="dolar" value="0">0</td>
+                    </tr> 
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(2)"></td>
+                        <td>Nokia</td>
+                        <td name="prict">100</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></td>
+                        <td name="dolar" value="0">0</td>
+                    </tr> 
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(3)"></td>
+                        <td>Sony xperia</td>
+                        <td name="prict">450</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></td>
+                        <td name="dolar" value="0">0</td>
+                    </tr> 
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(4)"></td>
+                        <td>Motorola</td>
+                        <td name="prict">180</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></td>
+                        <td name="dolar" value="0">0</td>
+                    </tr> 
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(5)"></td>
+                        <td>Oppo</td>
+                        <td name="prict">600</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></td>
+                        <td name="dolar" value="0">0</td>
+                    </tr> 
+                    <tr id="table2">
+                        <td><input type="checkbox" name="click" onclick="clickCheckBox(6)"></td>
+                        <td>Bphone</td>
+                        <td name="prict">90</td>
+                        <td><input type="text" id="tx" disabled name="cupNumber" value="0" onkeyup="intoMoney(this)"></input></td>
+                        <td name="dolar" value="0">0 </td>
+                    </tr> 
+                    <tr id="table2">               
+                        <td colspan="4">Total</td>
+                        <td id="sum">0</td>
+                    </tr> 
+                </table>
+            </div>
+        </div>
+        <div class="title1">
+            <h1>PRODUCTS</h1>
+        </div>
+        <div class="product5">
+            <div class="slidemay">
+            </div>
+            
+        </div>
+
+        <div class="end" id="end">
+            <div class="coating3"></div>
+            <div class="title2">
+                <h1>GET IN TOUCH</h1>
+                <p>Please give us your information so that we can <br> store and contact you easier</p>
+            </div>
+            <div class="input">
+                <div class="textbox">
+                <input type="text" placeholder="Enter Your Name "> <input type="text" placeholder="Enter Your Email">
+                <br>
+                <br>
+                <input type="text" placeholder="Enter Your Subject" id="sc">
+                <br>
+                <br>
+                <input type="text" placeholder="Enter Your Massage" id="sc">
+                <br>
+                <br>
+                <button>Submit</button>
+                </div>
+            </div>
+            <div class="subrise">
+                <div class="content">
+                    <h1>SUBSCRIBE</h1>
+                    <p>Follow us so you don't miss any of <br> our announcements</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="infoperson">
+                <p>
+                    Phone : 0985940157
+                    <br>
+                    Mail : minkienmdc2003@gmail.com
+                    <br>
+                    Address : Village 3 - Hoa Phu - Chu Pah - Gia Lai
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- <div class="menu">
+        <div class="titlle">
+            <h1>appy</h1>
+        </div>
+        <header>
+            <ul>
+                <li><a href="asm.html">HOME</a></li>
+                <li><a href="#bai1">PRODUCT</a></li>
+                <li><a href="#bai2">INVESTORS</a></li>
+                <li><a href="#bai3">TABLE</a></li>
+                <li><a href="log.html">LOG IN</a></li>
+                <li><a href="infomation.html">INFORMATION</a></li>
+            </ul>
+        </header>
+    </div> -->
+   <div class="menu">
+    
+   </div>
+</body>
+</html>

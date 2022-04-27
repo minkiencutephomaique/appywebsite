@@ -1,0 +1,82 @@
+.container{
+    width: 1505px;
+    height: 700px;
+}
+.container .background img{
+    width: 100%;
+    height: 700px;
+}
+.container .man img{
+    position: absolute;
+    top: 22px;
+    width: 55%;
+}
+.pading{
+    width: 1503px;
+    height: 80px;
+    position: absolute;
+    top: 8px;
+    border: 1px solid black;
+    position: fixed;
+}
+header{
+    margin-top: 15px;
+}
+header>ul>li{
+    display: inline-block;
+}
+header>ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+}
+header>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 0 40px;
+    line-height: 50px;
+    transition: 0.5s;
+}
+header>ul>li>a:hover{
+    color: white;
+}
+.logo p{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    position: absolute;
+    left: 230px;
+    top: 3px;
+}
+.logo img{
+    position: absolute;
+    width: 35px;
+    left: 180px;
+    top: 25px;
+}
+.title{
+    position: absolute;
+    top: 150px;
+    left: 850px;
+}
+.title p{
+    font-size: 70px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.brick{
+    position: absolute;
+    top: 180px;
+    left: 5px;
+}
+.pading1{
+    position: absolute;
+    width: 1100px;
+    height: 300px;
+    background: #fff url(../image/3.jpg) 50% 50%;
+    box-shadow: 2px 2px 22px rgb(0 0 0 / 11%);
+    top: 600px;
+    left: 200px;
+}

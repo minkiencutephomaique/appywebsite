@@ -1,0 +1,110 @@
+main{
+    width: 1505px;
+    height: 700px;
+    background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.cotainer{
+    width: 1505px;
+    height: 700px;
+    background: linear-gradient(45deg,#4e65ff,#92effd);
+    opacity: .9;
+}
+.background{
+    position: absolute;
+    top: 85px;
+    left: 250px;
+    width: 1000px;
+    height: 550px;
+    background: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.589);
+}
+.background img{
+    height: 550px;
+    filter: brightness(50%);
+}
+ h1{
+    font-family: monospace;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    font-size: 60px;
+    color: #ffffff;
+}
+.info{
+    position: relative;
+    left: 300px;
+    width: 400px;
+    height: 400px;
+    background: #ebebeb;
+    margin-top: -470px;
+    margin-left: 220px;
+    border-radius: 30px;
+    border: 3px solid #c10f41;
+}
+.person{
+    background: #233b88;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.589);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(../img/15.jpg);
+    background-size: contain;
+    position: absolute;
+    border: 3px solid #c10f41;
+    top: -60px;
+    left: 140px;
+}
+.info input{
+    margin-left: 70px;
+    width: 250px;
+    height: 35px;
+    border-radius: 30px;
+    border: 3px solid #c10f41;
+}
+.info input::placeholder{
+    color: #c10f41;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 10px;
+}
+.box input{
+    width: 13px;
+    margin-top: -7px;
+    margin-left: 80px;
+}
+.box span{
+    left: 100px;
+    position: absolute;
+    font-size: 18px;
+    font-family: monospace;
+    color: #c10f41;
+}
+.click button{
+    margin-left: 150px;
+    width: 110px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: monospace;
+    background: linear-gradient(45deg,#4e65ff,#92effd);
+    opacity: .9;
+    color: white;
+    transition: 0.5s;
+}
+.click button:hover{
+    background: #ffffff;
+    color: #c10f41;
+    border: 3px solid #c10f41;
+}
+.click p{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #c10f41;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
